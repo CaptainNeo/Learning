@@ -13,10 +13,11 @@ public class Test3 {
 		if(idx == m) {
 			for(int x : combination) System.out.print(x + " ");
 			System.out.println();
+			return;
 		} else {
 			for(int i=s; i<=n; i++) {
 				combination[idx] = arr[i];
-				combi(idx+1, s + 1);
+				combi(idx+1, i + 1);
 			}
 		}
 	}
